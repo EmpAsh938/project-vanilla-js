@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    max-width: 1500px;
+    background: linear-gradient(90deg, rgba(22,201,237,1) 14%, rgba(63,63,196,1) 59%, rgba(23,16,138,1) 98%); 
+}
+
+main {
+    width: 50%;
+    /* border: 1px solid burlywood; */
+    margin: 7em auto;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main h2 {
+    text-transform: capitalize;
+    color: rgb(33, 65, 34);
+    font-size: 2.2rem;
+    margin-bottom: .5em;
+}
+
+main h1 {
+    margin-bottom: .5em;
+}
+
+button {
+    border: 2px solid black;
+    padding: .2em;
+    margin: .1em .3em;
+    font-size: .9rem;
+    border-radius: 5px;
+    color: rgb(212, 226, 238);
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: rgb(43, 111, 214);
+    transition: all .3s linear;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.btn-container {
+    /* border: 1px solid rgb(128, 165, 128); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3em;
+}
