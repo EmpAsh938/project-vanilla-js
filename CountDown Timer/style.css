@@ -1,0 +1,177 @@
+/* variable */
+:root {
+    /* color */
+    /* blue */
+    --clr-primary: #021D27;
+    --clr-primary-1: #065774;
+    --clr-primary-2: #0B9FD5;
+    /* white */
+    --clr-white: #D8F3FD;
+    --clr-light-white: #fff;
+    /* dark */
+    --clr-dark: #222;
+    --clr-red-dark: #120202;
+    --clr-blue-dark: #011014;
+    /* font sizes */
+    --text-size: 2.5rem;
+    --text-size-primary: 2.2rem;
+    --text-size-primary-1: 1.5rem;
+    --text-size-primary-2: 1.3rem;
+    --text-size-primary-3: 1.2rem;
+    --text-size-primary-4: 1rem;
+    --text-size-secondary: .9rem;
+    --text-size-secondary-1: .8rem;
+    --text-size-secondary-2: .7rem;
+    --text-size-secondary-3: .6rem;
+    --text-size-secondary-4: .5rem;
+
+    /* margins and padding */
+    --mgp-primary: 1em;
+    --mgp-primary-1: .9em;
+    --mgp-primary-2: .7em;
+    --mgp-primary-3: .6em;
+    --mgp-primary-4: .5em;
+    --mgp-primary-5: .4em;
+    --mgp-primary-6: .3em;
+    --mgp-primary-7: .2em;
+
+    --max-width: 1000px;
+    --trnstn: all .3s linear;
+
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+main {
+    max-width: var(--max-width);
+    min-height: 100vh;
+    margin: 0 auto;    /* centers main */
+    display: grid;        
+    place-items: center; /* centers inner section */
+}
+
+section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--text-size-primary-4);
+    /* border: 1px solid var(--clr-primary-2); */
+    /* justify-items: flex-end; */
+}
+
+.img-container {
+    width: 100%;
+    /* border: 1px solid var(--clr-dark); */
+    /* padding: var(--mgp-primary-6); */
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: var(--text-size-secondary-4); */
+}
+
+.section-header {
+    /* width: 50%; */
+    /* border: 1px solid var(--clr-dark); */
+    padding: var(--mgp-primary-7);
+    /* display: grid; */
+    /* grid-template-rows: auto 1fr 1fr; */
+    /* row-gap: var(--text-size-secondary-4); */
+}
+
+.header-main {
+    font-size: var(--text-size-primary-1);
+    color: var(--clr-primary-1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.header-info {
+    letter-spacing: 1px;
+    font-size: var(--text-size-secondary);
+    color: var(--clr-blue-dark);
+    margin-top: var(--mgp-primary-4);
+}
+
+p {
+    text-align: justify;
+    color: var(--clr-primary-1);
+    font-size: var(--text-size-secondary);
+    padding: var(--mgp-primary-5);
+    margin-top: var(--mgp-primary);
+    line-height: var(--text-size-primary-2);
+}
+
+
+.timer-container {
+    /* border: 1px solid var(--clr-primary-2); */
+    /* text-align: left; */
+    display: flex;
+    margin-left: var(--mgp-primary-3);
+    margin-top: var(--mgp-primary);
+}
+
+.timer-cont {
+    background: var(--clr-primary);
+    color: var(--clr-light-white);
+    padding: var(--mgp-primary-1);
+    margin: var(--mgp-primary-7) var(--mgp-primary-3);
+    text-align: center;
+    font-size: var(--text-size-primary-1);
+    letter-spacing: 4px;
+    padding: var(--mgp-primary-5);
+
+}
+
+.timers {
+    background: var(--clr-primary);
+    color: var(--clr-light-white);
+    padding: var(--mgp-primary-1);
+    margin: var(--mgp-primary-7) var(--mgp-primary-3);
+    text-align: center;
+}
+
+.timers h4 {
+    font-size: var(--text-size-primary-1);
+    letter-spacing: 4px;
+    padding: var(--mgp-primary-5);
+}
+
+.timers span {
+    font-size: var(--text-size-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 970px) {
+    section {
+        grid-template-columns: none;
+        grid-template-rows: 1fr auto;
+    }
+    .section-header {
+        /* width: 90%; */
+        /* margin: 0 auto; */
+        margin-top: var(--mgp-primary);
+        text-align: center;
+    }
+    .timer-container {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
