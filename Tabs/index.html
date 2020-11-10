@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1 class="top-header">about</h1>
+            <p class="top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, ullam.</p>
+            <article>
+                <img src="./hero-bcg.jpeg" alt="image">
+                <div class="tabs">
+                    <div class="btn-container">
+                        <button class="active" data-id="history">history</button>
+                        <button data-id="vision">vision</button>
+                        <button 
+                        data-id="goals">goals</button>
+                    </div>
+                    <!-- articles for each heading -->
+                    <div class="tabs-main">
+                        <div id="history" class="tabs-sec">
+                            <h3 class="tabs-header">History</h3>
+                            <p class="tabs-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque tempore
+                                consequatur consectetur reiciendis dolore iure debitis mollitia animi dolor praesentium.
+                            </p>
+                        </div>
+                        <div id="vision" class="tabs-sec action">
+                            <h3 class="tabs-header">vision</h3>
+                            <p class="tabs-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque tempore
+                                consequatur consectetur reiciendis dolore iure debitis mollitia animi dolor praesentium.
+                                <ul>
+                                    <li>Sustainibility</li>
+                                    <li>Expansion</li>
+                                    <li>Qualtiy Material</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div id="goals" class="tabs-sec action">
+                            <h3 class="tabs-header">Goals</h3>
+                            <p class="tabs-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque tempore
+                                consequatur consectetur reiciendis dolore iure debitis mollitia animi dolor praesentium.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
