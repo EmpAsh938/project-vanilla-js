@@ -1,0 +1,214 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(10, 13, 22);
+    text-transform: capitalize;
+
+}
+
+ul {
+    width: 80%;
+    margin: 1em auto;
+    list-style-type: none;
+    text-align: left
+}
+
+li {
+    /* width: 40%; */
+    margin-left: 1.5em;
+    font-size: 1.4rem;
+    color: rgb(13, 29, 53);
+    /* font-weight: 400; */
+}
+
+main {
+    max-width: 900px;
+    margin: 3em auto;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid green; */
+}
+
+section {
+    /* border: 1px solid red; */
+    width: 60%;
+    padding: .3em;
+    margin: 2em;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin: .5em;
+    padding: .3em;
+    letter-spacing: 2px;
+    color: rgb(10, 18, 34);
+}
+
+form {
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    margin-bottom: 3em;
+}
+
+form input {
+    width: 70%;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+}
+.btn {
+    border: none;
+    width: 25%;
+    color: rgb(16, 18, 24);
+    font-size: 1.2rem;
+    background: rgb(164, 218, 243);
+    letter-spacing: 2px;
+    padding: .2em .7em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    background: rgb(54, 148, 182);
+    color: #fff;
+}
+
+.clear-btn {
+    display: none;
+    width: 50%;
+    background: none;
+    color: rgb(165, 28, 28);
+    font-weight: 600;
+    letter-spacing: 3px;
+    /* font-size: 1.1rem; */
+    margin: .6em auto;
+}
+.clear-btn:hover {
+    background: rgba(0,0,0,0.1);
+    color: #ec2727;
+}
+
+.list {
+    display: none;
+}
+
+.butn {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background: transparent;
+    padding: .3em;
+    letter-spacing: 1px;
+}
+
+.editBtn {
+    color: rgb(26, 170, 26);
+    margin: 0 .3em;
+}
+
+.removeBtn {
+    color: rgb(211, 32, 32);
+    margin: 0 .4em;
+}
+
+.newListDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-container {
+    margin: 0 auto;
+    margin-bottom: .5em;
+}
+
+.editSubBtn {
+    background: rgb(26, 170, 26);
+    color: #fff;
+}
+
+.editSubBtn:hover {
+    background: rgb(5, 122, 5);
+    color: #fff;  
+}
+
+.msg-alert {
+    /* margin: .4em 0; */
+    transition: all .3s linear;
+    margin-top: .8em;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 660px) {
+    section h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+    form input {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    .btn {
+        width: 27%;
+        font-size: 1rem;
+    }
+    .clear-btn {
+        width: 100%;
+    }
+    li {
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 532px) {
+    section h1 {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    form input {
+        font-size: .9rem;
+    }
+    .btn {
+        padding: .2em .5em;
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+    .btn-container .butn {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section h1 {
+        font-size: 1.6rem;
+        margin: 0 auto;
+    }
+    form input {
+        font-size: .8rem;
+    }
+    .btn {
+        width: 30%;
+        font-size: .8rem;
+    }
+    
+    li {
+        font-size: .8rem;
+    }
+    .clear-btn {
+        width: 100%;
+        
+    }
+}
