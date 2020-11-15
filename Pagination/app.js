@@ -38,7 +38,7 @@ btnContainer.childNodes.forEach(btncontainer => {
         } else if (e.currentTarget.classList.contains('next')) {
             index++
             if (index > 10) {
-                index = 0
+                index = 1
             }
         } else if (e.currentTarget.classList.contains('btn-secondary')) {
             e.currentTarget.classList.add('btn-active')
