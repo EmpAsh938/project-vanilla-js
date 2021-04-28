@@ -8,21 +8,26 @@ buttons.forEach((button) =>
       // Prev image
       if (index === 0) {
         images[images.length - 1].classList.remove("prev");
-        images[images.length - 1].classList.add("next");
+        // images[images.length - 1].classList.add("next");
       } else {
         images[index - 1].classList.remove("prev");
-        images[index - 1].classList.add("next");
+        // images[index - 1].classList.add("next");
       }
       // Current image
       images[index].classList.remove("active");
       images[index].classList.add("prev");
+      // Next image
       index++;
       if (index >= images.length) {
         index = 0;
       }
-      // Next image
       images[index].classList.remove("next");
       images[index].classList.add("active");
+      if (index === images.length - 1) {
+        images[0].classList.add("next");
+      } else {
+        images[index + 1].classList.add("next");
+      }
     } else if (e.target.classList.contains("btn-prev")) {
       //Current image
       images[index].classList.remove("active");
