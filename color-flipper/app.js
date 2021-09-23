@@ -6,6 +6,7 @@ const colorAlpha = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b',
 
 function changeBackground(){
     section.style.backgroundColor = getColor();
+    span.textContent = getColor();
 }
 
 function getColor() {
