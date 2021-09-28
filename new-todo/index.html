@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <article class="header">
+            <p class="alert-msg">This is Alert Message</p>
+            <h2 class="top-title">Todo</h2>
+            <form>
+                <input type="text" id="todo" class="input-text">
+                <select name="todo-type" >
+                    <option value="ongoing">ongoing</option>
+                    <option value="completed">completed</option>
+                    <option value="due" selected>due</option>
+                </select>
+                <button class="form-btn add-btn">Add</button>
+            </form>
+        </article>
+        <article class="main-content">
+            <h2 class="todos-title ">List of todos</h2>
+            <div class="todos-sub">
+                <h3 class="todos-title sub-title">Ongoing</h3>
+                <!-- <p>No todos to show.</p> -->
+                <ul class="todos-list ongoing">
+                    <!-- <li class="list-item">
+                        <input type="checkbox">
+                        <p>lorem ipsum</p>
+                        <button>Edit</button>
+                        <button>Remove</button>
+                    </li> -->
+                </ul>
+            </div>
+            
+            <div class="todos-sub">
+                <h3 class="todos-title sub-title">Due</h3>
+                <!-- <p>No todos to show.</p> -->
+                <ul class="todos-list due">
+                </ul>
+            </div>
+
+            <div class="todos-sub">
+                <h3 class="todos-title sub-title">Completed</h3>
+                <!-- <p>No todos to show.</p> -->
+                <ul class="todos-list completed">
+                    <!-- <li class="list-item">
+                        <input type="checkbox">
+                        <p>lorem ipsum</p>
+                        <button>Edit</button>
+                        <button>Remove</button>
+                    </li> -->
+                </ul>
+            </div>
+        </article>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
+
