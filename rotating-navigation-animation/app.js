@@ -3,7 +3,6 @@ const btnContainer = document.querySelector('.button');
 const articleContainer = document.querySelector('.article');
 
 function animateArticle(param) {
-    console.log(menuLinks);
     if (param === 'active') {
         btnContainer.classList.add('active');
         articleContainer.classList.add('move');
