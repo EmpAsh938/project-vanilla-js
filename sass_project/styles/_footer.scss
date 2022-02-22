@@ -1,0 +1,34 @@
+@import "color";
+
+.footer {
+  background-color: $gray;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    p {
+      color: $white;
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 0 2em;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 0.5em;
+      padding: 0.5em 0;
+      background-color: $orange;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+}

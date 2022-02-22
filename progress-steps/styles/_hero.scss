@@ -1,0 +1,63 @@
+.hero {
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    width: 200px;
+    display: grid;
+    grid-template-rows: 100px auto;
+  }
+  &__steps {
+    position: relative;
+    flex: 1;
+  }
+  &__progressbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__marker,
+  &__highlighter {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 50%;
+    left: 0;
+    background-color: $primaryGray;
+    z-index: -2;
+    transition: all 0.3s ease;
+  }
+  &__highlighter {
+    width: 0;
+    border: 1px solid $primaryBlue;
+    background-color: $primaryBlue;
+    z-index: -1;
+  }
+  &__dots {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    border: 1.5px solid $primaryBlue;
+    background-color: $primaryWhite;
+    color: $primaryBlue;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  &__btn {
+    text-align: center;
+  }
+}
+
+.active-dots {
+  border: 1px solid $primaryBlue;
+  background-color: $primaryBlue;
+  color: $primaryWhite;
+}

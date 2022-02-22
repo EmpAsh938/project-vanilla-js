@@ -1,0 +1,12 @@
+@mixin rwd($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin text {
+  color: $gray-800;
+  font-size: $text-base;
+  line-height: 1.2;
+  text-align: justify;
+}

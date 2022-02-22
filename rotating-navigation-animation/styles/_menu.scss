@@ -1,0 +1,46 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $stone-700;
+  color: $gray-50;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: -1;
+
+  &__links {
+    margin: 0.5em 0;
+    display: grid;
+    grid-template-columns: 50px auto;
+    transform: translateX(0%);
+    transition: all 0.3s ease;
+
+    &:nth-child(2) {
+      padding-left: 0.5em;
+    }
+    &:nth-child(3) {
+      padding-left: 1.5em;
+    }
+    span {
+      font-size: $text-sm;
+      font-weight: $font-medium;
+      text-transform: uppercase;
+
+      &:first-child {
+        // border: solid springgreen;
+        text-align: center;
+      }
+
+      i {
+        width: 100%;
+        font-size: $text-xl;
+      }
+    }
+  }
+}
+
+.active-menu {
+  transform: translateX(0%);
+}

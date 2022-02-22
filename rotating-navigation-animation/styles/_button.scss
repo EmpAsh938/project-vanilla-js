@@ -1,0 +1,33 @@
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $red-500;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translate(-50%, -10%) rotate(180deg);
+  transition: all 0.3s ease;
+
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0 15px;
+    cursor: pointer;
+
+    i {
+      font-size: $text-xl;
+      color: $gray-50;
+    }
+  }
+}
+
+.active {
+  transform: translate(-50%, -10%) rotate(30deg);
+}
