@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="register">
+        <h2>Register</h2>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <p class="error">Username must be at least 3 characters</p>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <p class="error">Email is not valid</p>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter password">
+            <p class="error">Password must be at least 6 characters</p>
+        </div>
+        <div>
+            <label for="cpassword">Confirm Password</label>
+            <input type="text" id="cpassword" placeholder="Enter password again">
+            <p class="error">Password must match</p>
+        </div>
+        <button class="submit-button">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
