@@ -22,8 +22,10 @@ function toggleError(elem,show) {
 function validateUsername(){
     if(username.value.length < 3) {
         toggleError(username.nextElementSibling,true);
+        toggleError(username,true);
         validUsername = false;
     } else {
+        toggleError(username,false);
         toggleError(username.nextElementSibling,false);
         validUsername = true;
     }
@@ -32,8 +34,10 @@ function validateUsername(){
 function validateEmail(){
     if(!email.value.match(re)){
         toggleError(email.nextElementSibling, true);
+        toggleError(email, true);
         validEmail = false;
     } else {
+        toggleError(email,false);
         toggleError(email.nextElementSibling,false);
         validEmail = true;
     }
@@ -41,9 +45,11 @@ function validateEmail(){
 
 function validatePassword(){
     if(password.value.length < 6) {
+        toggleError(password,true);
         toggleError(password.nextElementSibling, true);
         validPassword = false;
     } else {
+        toggleError(password,false);
         toggleError(password.nextElementSibling,false);
         validPassword = true;
     }
@@ -52,9 +58,11 @@ function validatePassword(){
 
 function validateConfirmPassword(){
     if(!confirm_password.value || password.value !== confirm_password.value) {
+        toggleError(confirm_password,true);
         toggleError(confirm_password.nextElementSibling,true);
         validConfirmPassword = false;
     } else {
+        toggleError(confirm_password,false);
         toggleError(confirm_password.nextElementSibling,false);
         validConfirmPassword = true;
     }
